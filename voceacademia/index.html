@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="pasini.png">
+        <link rel="icon" type="image/x-icon" href="pasini.png">
+        <title>Quinho Guedez / Qual é seu nivel na academia?</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet"> 
+        <link rel="stylesheet" href="style.css">  
+    </head>
+    <body>
+    <h1>Qual é seu nivel na academia?</h1>
+    <section id="quiz">
+        <div class="perguntas" id="pergunta1">
+            <h3>Qual desses faz mais o seu estilo?</h3>
+            <div class="resposta">
+                <div onclick="quiz('pergunta1','pergunta2'), ponto(3)">Muito peso, pouca técnica</div>
+                <div onclick="quiz('pergunta1','pergunta2'), ponto(1)">Faz lentinho pra pegar mais</div>
+                <div onclick="quiz('pergunta1','pergunta2'), ponto(5)">Técnica com boa carga</div>
+                <div onclick="quiz('pergunta1','pergunta2'), ponto(0)">Nem técnica, nem carga</div>
+            </div>
+        </div>
+        <div class="perguntas" id="pergunta2">
+            <h3>Quem é você na dieta?</h3>
+            <div class="resposta">
+                <div onclick="quiz('pergunta2','pergunta3'), ponto(5)">Não erro um dia</div>
+                <div onclick="quiz('pergunta2','pergunta3'), ponto(3)">Só um refeição livre por semana</div>
+                <div onclick="quiz('pergunta2','pergunta3'), ponto(1)">Uma semana segue, na outra nem lembra</div>
+                <div onclick="quiz('pergunta2','pergunta3'), ponto(0)">Nunca se importou</div>
+            </div>
+        </div>
+        <div class="perguntas" id="pergunta3">
+            <h3>Quando você treina com um amigo(a), você sempre...</h3>
+            <div class="resposta">
+                <div onclick="quiz('pergunta3','pergunta4'), ponto(5)">Ajuda e motiva</div>
+                <div onclick="quiz('pergunta3','pergunta4'), ponto(3)">Quer pegar mais peso que ele(a)</div>
+                <div onclick="quiz('pergunta3','pergunta4'), ponto(0)">Só fica no celular</div>
+                <div onclick="quiz('pergunta3','pergunta4'), ponto(1)">Só converversa e pouco treino</div>
+            </div>
+        </div>
+        <div class="perguntas" id="pergunta4">
+            <h3>Qual é o melhor parceiro(a) de treino para você?</h3>
+            <div class="resposta">
+                <div onclick="quiz('pergunta4','pergunta5'), ponto(3)">Quem só quer pegar peso</div>
+                <div onclick="quiz('pergunta4','pergunta5'), ponto(5)">Quem foca na técnica</div>
+                <div onclick="quiz('pergunta4','pergunta5'), ponto(1)">Quem finge que ta ajudando</div>
+                <div onclick="quiz('pergunta4','pergunta5'), ponto(0)">Quem ajuda na primeira repetição</div>
+            </div>
+        </div>
+        <div class="perguntas" id="pergunta5">
+            <h3>Se tiver chovendo no dia de perna, você...</h3>
+            <div class="resposta">
+                <div onclick="quiz('pergunta5','pergunta6'), ponto(0)">Falta na academia</div>
+                <div onclick="quiz('pergunta5','pergunta6'), ponto(1)">Pula o treino</div>
+                <div onclick="quiz('pergunta5','pergunta6'), ponto(3)">Treina perna no dia seguinte</div>
+                <div onclick="quiz('pergunta5','pergunta6'), ponto(5)">Vai treinar de qualquer jeito</div>
+            </div>
+        </div>
+        <div class="perguntas" id="pergunta6">
+            <h3>Quando falta a proteína da dieta, oque você faz?</h3>
+            <div class="resposta">
+                <div onclick="quiz('pergunta6','pergunta7'), ponto(3)">Substituo com outra proteína</div>
+                <div onclick="quiz('pergunta6','pergunta7'), ponto(0)">Fico sem proteína</div>
+                <div onclick="quiz('pergunta6','pergunta7'), ponto(1)">Peço um lanche</div>
+                <div onclick="quiz('pergunta6','pergunta7'), ponto(5)">Vou comprar se der tempo</div>
+            </div>
+        </div>
+        <div class="perguntas" id="pergunta7">
+            <h3>Seu amigo(a) ta desmotivado e não que treinar, você...</h3>
+            <div class="resposta">
+                <div onclick="quiz('pergunta7','pergunta8'), ponto(3)">Deixa ele e vai sozinho(a)</div>
+                <div onclick="quiz('pergunta7','pergunta8'), ponto(0)">Não vai treinar também</div>
+                <div onclick="quiz('pergunta7','pergunta8'), ponto(5)">Vai buscar ele(a) pra treinar</div>
+                <div onclick="quiz('pergunta7','pergunta8'), ponto(1)">Chama outro amigo(a)</div>
+            </div>
+        </div>
+        <div class="perguntas" id="pergunta8">
+            <h3>Você viu seu amigo treinando com outro, oque você faz?</h3>
+            <div class="resposta">
+                <div onclick="quiz('pergunta8','pergunta9'), ponto(0)">Vai reclamar com ele(a)</div>
+                <div onclick="quiz('pergunta8','pergunta9'), ponto(5)">Nem liga e segue o treino</div>
+                <div onclick="quiz('pergunta8','pergunta9'), ponto(1)">Arruma outro parceiro(a)</div>
+                <div onclick="quiz('pergunta8','pergunta9'), ponto(3)">Vai treinar com eles(a)</div>
+            </div>
+        </div>
+        <div class="perguntas" id="pergunta9">
+            <h3>Um filme muito bom está passando na TV da academia, oque você está fazendo?</h3>
+            <div class="resposta">
+                <div onclick="quiz('pergunta9','pergunta10'), ponto(0)">Assistindo o filme</div>
+                <div onclick="quiz('pergunta9','pergunta10'), ponto(3)">Desligando a TV</div>
+                <div onclick="quiz('pergunta9','pergunta10'), ponto(5)">Treinando focado</div>
+                <div onclick="quiz('pergunta9','pergunta10'), ponto(1)">Assistindo no descanso da série</div>
+            </div>
+        </div>
+        <div class="perguntas" id="pergunta10">
+            <h3>Quando você ve alguém fazendo o exercício errado, você corrige?</h3>
+            <div class="resposta">
+                <div onclick="quiz('pergunta10','fim'), ponto(5)">Sim, sempre</div>
+                <div onclick="quiz('pergunta10','fim'), ponto(1)">Depende da pessoa</div>
+                <div onclick="quiz('pergunta10','fim'), ponto(0)">Nunca, não é meu trabalho</div>
+                <div onclick="quiz('pergunta10','fim'), ponto(3)">Aviso o professor</div>
+            </div>
+        </div>
+        <div id="fim">
+            <div class="finaliza">
+                <h2 class="h2fim">Muito obrigado por vir até aqui!!</h2>
+                <div class="nivel">
+                    <img src="img1.png" alt="" id="foto-nivel">
+                    <h3 id="texto-fim">Seu nivel é o estremo, você se concentra bem nos exercicios e faz tudo que tem que sre fitro para alcançar</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    </body>
+   <script src="script.js"></script>
+</html>
